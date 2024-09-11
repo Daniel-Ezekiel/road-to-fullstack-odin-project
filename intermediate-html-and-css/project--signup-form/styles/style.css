@@ -38,6 +38,7 @@ html {
 body {
   display: grid;
   width: 100vw;
+  min-height: 100dvh;
   grid-template-columns: repeat(12, 1fr);
   font-size: 1.6rem;
 }
@@ -53,6 +54,7 @@ header {
   grid-column: 1/-1;
 
   span {
+    height: 100%;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -174,3 +176,77 @@ main {
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
+@media screen and (min-width: 540px) {
+  main {
+    form {
+      fieldset {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 4.5rem;
+
+        .div.form__control {
+          grid-column: 1/2;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    grid-template-rows: 1fr;
+  }
+
+  header {
+    grid-column: 1/6;
+
+    display: grid;
+    place-items: center;
+
+    span {
+      height: fit-content;
+      width: 100%;
+    }
+  }
+
+  main {
+    grid-column: 6/-1;
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1024px) {
+    main {
+      section {
+        & h1 {
+          padding: 2.5rem 6.5rem 2.5rem 6.5rem;
+        }
+      }
+
+      section.top_section {
+        padding: 8rem;
+        padding-top: 14rem;
+        font-size: 2rem;
+
+        p {
+          width: 60rem;
+        }
+      }
+
+      form {
+        fieldset {
+          padding: 0 6.5rem 6.5rem 6.5rem;
+        }
+
+        div.button__control {
+          padding: 2.5rem 6.5rem 6.5rem 6.5rem;
+        }
+      }
+    }
+  }
+}
