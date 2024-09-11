@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Norse Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url(/font/Norse-Bold.woff2) format("woff2"),
+    url(/font/Norse-Bold.otf) format("opentype"),
+    url(/font/Norse-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400, 500, 700;
+  src: url(/font/Inter-Variable.woff2) format("woff2"),
+    url(/font/Inter-Variable.otf) format("opentype"),
+    url(/font/Inter-Variable.ttf) format("truetype");
+}
