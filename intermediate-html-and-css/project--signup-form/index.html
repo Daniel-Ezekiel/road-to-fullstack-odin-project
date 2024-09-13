@@ -35,16 +35,28 @@
       <section>
         <h1>Let's do this!</h1>
 
-        <form action="" method="post">
+        <form method="post">
           <fieldset>
             <div class="form__control">
               <label for="firstName">First Name</label>
-              <input type="text" id="firstName" placeholder="Thor" />
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                placeholder="Thor"
+                required
+              />
             </div>
 
             <div class="form__control">
               <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" placeholder="Odinson" />
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                placeholder="Odinson"
+                required
+              />
             </div>
 
             <div class="form__control">
@@ -52,13 +64,23 @@
               <input
                 type="email"
                 id="email"
+                name="email"
                 placeholder="pointbreak@avengers.com"
+                required
               />
             </div>
 
             <div class="form__control">
               <label for="phone">Phone Number</label>
-              <input type="tel" id="phone" placeholder="Thor" />
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+2341234567890"
+                minlength="11"
+                maxlength="14"
+                required
+              />
             </div>
 
             <div class="form__control">
@@ -66,7 +88,10 @@
               <input
                 type="password"
                 id="password"
+                name="password"
                 placeholder="Enter password"
+                minlength="8"
+                required
               />
             </div>
 
@@ -75,13 +100,15 @@
               <input
                 type="password"
                 id="confirmPassword"
+                name="confirmPassword"
                 placeholder="Re-enter password"
+                required
               />
             </div>
           </fieldset>
 
           <div class="button__control">
-            <button type="button">Create Account</button>
+            <button>Create Account</button>
             <p>Already have an account? <a href="#">Log in</a></p>
           </div>
         </form>

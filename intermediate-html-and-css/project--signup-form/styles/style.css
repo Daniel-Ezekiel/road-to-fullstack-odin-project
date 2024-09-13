@@ -127,14 +127,17 @@ main {
           font-size: 1.4rem;
         }
 
-        /* 
-        & input:invalid {
-          border: 0.2rem solid var(--input-invalid);
+        input:focus {
+          border: 0.2rem solid var(--input-focus);
         }
 
-        & input:focus-visible {
-          border: 0.2rem solid var(--input-focus);
-        } */
+        input:valid {
+          border: 0.2rem solid var(--odin-green);
+        }
+
+        input:invalid {
+          border: 0.2rem solid var(--input-invalid);
+        }
       }
     }
 
