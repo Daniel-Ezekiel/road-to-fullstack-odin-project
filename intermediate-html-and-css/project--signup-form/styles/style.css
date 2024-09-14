@@ -128,7 +128,7 @@ main {
         }
 
         input:focus {
-          border: 0.2rem solid var(--input-focus);
+          border: 0.2rem solid var(--inp);
         }
 
         input:valid {

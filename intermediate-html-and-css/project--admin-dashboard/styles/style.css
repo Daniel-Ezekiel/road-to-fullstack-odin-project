@@ -1,0 +1,111 @@
+/* Root styles */
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-blue: #0ea5e9;
+  --primary-yellow: #f59e0b;
+  --primary-yellow-dark: #d97706;
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  display: grid;
+  width: 100vw;
+  min-height: 100dvh;
+  font-family: "Raleway", sans-serif;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem;
+  border-bottom: 0.25rem solid #000;
+
+  font-size: 1.25rem;
+}
+
+header a {
+  display: flex;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.char--summary {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-weight: 700;
+}
+
+p .img__avatar {
+  font-weight: 700;
+}
+
+.img__avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4.25rem;
+  width: 4.25rem;
+  background-color: var(--primary-blue);
+  padding: 1.2rem;
+  border-radius: 50%;
+
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+div + div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.all-project-actions button {
+  background-color: var(--primary-blue);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border-color: none;
+
+  font-size: 2rem;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

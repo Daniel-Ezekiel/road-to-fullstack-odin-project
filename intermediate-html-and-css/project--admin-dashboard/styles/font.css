@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400, 500, 700;
+  src: url(/font/Raleway-Variable.woff2) format("woff2"),
+    url(/font/Raleway-Variable.otf) format("opentype"),
+    url(/font/Raleway-Variable.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400, 500, 700;
+  src: url(/font/Inter-Variable.woff2) format("woff2"),
+    url(/font/Inter-Variable.otf) format("opentype"),
+    url(/font/Inter-Variable.ttf) format("truetype");
+}
