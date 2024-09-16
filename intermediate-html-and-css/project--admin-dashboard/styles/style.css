@@ -5,7 +5,7 @@ html {
 
 :root {
   --primary-blue: #0ea5e9;
-  --primary-yellow: #f59e0b;
+  --primary-yellow: #eab308;
   --primary-yellow-dark: #d97706;
 }
 
@@ -33,7 +33,6 @@ html {
 /*******************************************/
 
 body {
-  display: grid;
   width: 100vw;
   min-height: 100dvh;
   font-family: "Raleway", sans-serif;
@@ -91,7 +90,17 @@ p .img__avatar {
   color: #fff;
 }
 
-div + div {
+h1.char--summary {
+  width: 18rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.header-actions + div {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -105,6 +114,88 @@ div + div {
   border-color: none;
 
   font-size: 2rem;
+}
+
+main {
+  padding: 2rem;
+  background-color: #f0f0f0;
+  display: grid;
+  gap: 2.5rem;
+}
+
+section > div {
+  display: grid;
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: #fff;
+  border-left: 0.5rem solid var(--primary-yellow);
+  border-radius: 0.8rem;
+  padding: 3rem 1.5rem;
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#announcements div {
+  background-color: #fff;
+  padding: 1.2rem;
+  border-radius: 0.8rem;
+}
+
+article,
+article h3 {
+  font-size: 1.6rem;
+}
+
+article {
+  border-bottom: 0.1rem solid #c5c5c5;
+}
+
+article:last-child {
+  border-bottom: none;
+}
+
+.trending-chars {
+  background-color: #fff;
+  border-radius: 0.8rem;
+  padding: 2.5rem 1.2rem;
+}
+
+.trending-chars .char--summary {
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "avatar userId"
+    "avatar projectName";
+  place-items: end;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.trending-chars .char--summary .img__avatar {
+  grid-area: avatar;
+}
+
+.trending-chars .char--summary .userId {
+  grid-area: userId;
+  place-self: start;
+  align-self: end;
+
+  font-weight: 600;
+}
+
+.trending-chars .char--summary .projectName {
+  grid-area: projectName;
+  place-self: start;
 }
 /******************************************
 /* ADDITIONAL STYLES
